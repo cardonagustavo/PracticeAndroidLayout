@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F6F6"
+    android:backgroundTint="#C0E3FF"
+    tools:context=".mainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableBottom="@android:drawable/divider_horizontal_textfield"
+            android:text="@string/txtDatos"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="#000B00"
+            android:textSize="48sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/txtNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:autofillHints="username"
+            android:ems="10"
+            android:hint="@string/hint_nombre"
+            android:inputType="text"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+
+            android:textColor="#FFFFFF" />
+
+        <EditText
+            android:id="@+id/editTextTextEmailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:autofillHints="username"
+            android:ems="10"
+            android:hint="@string/hint_email"
+            android:inputType="textEmailAddress"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:textColor="#FFFFFF" />
+
+        <Spinner
+            android:id="@+id/cbxDeptos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:entries="@array/strDeptos"
+            android:minWidth="48dp"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/txtDomicilio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:autofillHints="username"
+            android:ems="10"
+            android:inputType="text|textMultiLine"
+            android:lines="5"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:text="@string/txt_domicilio"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:text="@string/txt_horario" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:minHeight="48dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbCompleto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:text="@string/radio_Button1" />
+
+            <RadioButton
+                android:id="@+id/rbMedioTiempo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:text="@string/radio_Button2" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnGuardar"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="@string/boton"
+            android:textAlignment="center" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
